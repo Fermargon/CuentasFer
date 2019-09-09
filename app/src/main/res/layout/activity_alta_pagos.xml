@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    tools:context="com.mar.fer.cuentasfer.AltaPagosActivity">
+
+    <LinearLayout
+        android:id="@+id/zoBotFechUsu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            android:id="@+id/buFecha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/imgbucalendario"
+            android:onClick="datePicker"/>
+
+        <TextView
+            android:id="@+id/etFecha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_vertical|center"
+            android:layout_weight="3"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="21/02/2017"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etUsuario"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_vertical|center"
+            android:layout_weight="3"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/buUsuario"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/imgbuusuario" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotPrimera"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buCompra"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbucompra" />
+
+        <ImageButton
+            android:id="@+id/buPicoteo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbupicoteo" />
+
+        <ImageButton
+            android:id="@+id/buEntradas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuentradas" />
+
+        <ImageButton
+            android:id="@+id/buFarmacia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbufarmacia" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSegunda"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buEnzo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuenzo" />
+
+        <ImageButton
+            android:id="@+id/buHogar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuhogar" />
+
+        <ImageButton
+            android:id="@+id/buJuegosAzar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuloterias" />
+
+        <ImageButton
+            android:id="@+id/buViajes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuviajes" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotTercera"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buRegalos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgburegalo" />
+
+        <ImageButton
+            android:id="@+id/buPrestar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuprestar" />
+
+        <ImageButton
+            android:id="@+id/buGastosMensuales"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuloterias" />
+
+        <ImageButton
+            android:id="@+id/buCoche"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbucoche" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoFijo1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/background_dark"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSecCompras"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/buHiper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuhipercor" />
+
+        <ImageButton
+            android:id="@+id/buAlcampo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbualcampo" />
+
+        <ImageButton
+            android:id="@+id/buCarrefour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbucarrefour" />
+
+        <ImageButton
+            android:id="@+id/buOtrcompras"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuotros" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSecJuegosAzar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/buEuromillones"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbueuro" />
+
+        <ImageButton
+            android:id="@+id/buOnce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuonce" />
+
+        <ImageButton
+            android:id="@+id/buLoteria"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuloteria" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSecViajes"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/buHotel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuhotel" />
+
+        <ImageButton
+            android:id="@+id/buAvion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuavion" />
+
+        <ImageButton
+            android:id="@+id/buTren"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbutren" />
+
+        <ImageButton
+            android:id="@+id/buGasolina"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbugasolina" />
+
+        <ImageButton
+            android:id="@+id/buTaxi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbutaxi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSecPicoteo"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/buRestaurante"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgburestaurante" />
+
+        <ImageButton
+            android:id="@+id/buCopas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbucopas" />
+
+        <ImageButton
+            android:id="@+id/buHelados"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuhelados" />
+
+        <ImageButton
+            android:id="@+id/buOtrpicoteo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbupizzas" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/zoBotSecEntradas"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/buTeatro"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuteatro" />
+
+        <ImageButton
+            android:id="@+id/buCine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbucine" />
+
+        <ImageButton
+            android:id="@+id/buMuseo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbumuseo" />
+
+        <ImageButton
+            android:id="@+id/buOtrentradas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuotros" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSecHogar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/buMobiliario"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbumuebles" />
+
+        <ImageButton
+            android:id="@+id/buFerreterias"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbubricolaje" />
+
+        <ImageButton
+            android:id="@+id/buPlantas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuplantas" />
+
+        <ImageButton
+            android:id="@+id/buElectrodomesticos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuelectro" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSecRegalos"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/buReyes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbureyes" />
+
+        <ImageButton
+            android:id="@+id/buCumples"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbucumple" />
+
+        <ImageButton
+            android:id="@+id/buBoda"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuboda" />
+
+        <ImageButton
+            android:id="@+id/buOtrosRegalos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuotros" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSecPrestar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/buPrestarCompras"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbucompras" />
+
+        <ImageButton
+            android:id="@+id/buPrestarAmigos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbutaller" />
+
+        <ImageButton
+            android:id="@+id/buPrestarFinCuentas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbufincuentas" />
+
+        <ImageButton
+            android:id="@+id/buOtrosPrestar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuotros" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSecCoche"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/buItv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuitv" />
+
+        <ImageButton
+            android:id="@+id/buTaller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbutaller" />
+
+        <ImageButton
+            android:id="@+id/buOtrosCoche"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuotros" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotSecGastosMensuales"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/buGasto1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuitv" />
+
+        <ImageButton
+            android:id="@+id/buGasto2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbutaller" />
+
+        <ImageButton
+            android:id="@+id/buGasto3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuotros" />
+
+        <ImageButton
+            android:id="@+id/buGasto4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgbuotros" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/zoFijo2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/background_dark"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/zoLitDesAdicional"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/etTipoDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_vertical|center"
+            android:gravity="left|center"
+            android:text=""
+            android:textAlignment="gravity"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoBotGrabar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buGrabar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_vertical|center"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Grabar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zoDesAdicional"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtDesAdicional"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_vertical|center"
+            android:layout_weight="5"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light"
+            android:hint="Descripción adicional"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/etSeparador"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_vertical|center"
+            android:background="@android:color/black"
+            android:gravity="left"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edtImporte"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_vertical|center"
+            android:layout_weight="2.2"
+            android:background="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light"
+            android:hint="€€€"
+            android:inputType="number"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

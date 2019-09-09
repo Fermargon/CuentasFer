@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="mifileapp" path="mifileapp"/>
+    <external-path name="mifileapp" path="mifileapp" />
+    <external-files-path name="mifileapp" path="mifileapp" />
+    <files-path name="files" path="files"/>
+    <external-path name="files" path="files" />
+    <external-files-path name="files" path="files" />
+</paths>

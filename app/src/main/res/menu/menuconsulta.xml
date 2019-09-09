@@ -1,0 +1,46 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_mail"
+        android:showAsAction="never"
+        android:title="@string/text_enviar"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/menu_whatsapp"
+        android:showAsAction="never"
+        android:title="@string/text_enviar_whatsapp"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/menu_historico"
+        android:showAsAction="never"
+        android:title="@string/text_historico"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/menu_generarhistorico"
+        android:showAsAction="never"
+        android:title="Generar Historico"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/menu_guardartemporada"
+        android:showAsAction="never"
+        android:title="CLRoyale - Guardar Temporada"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/menu_playernuevos"
+        android:showAsAction="never"
+        android:title="CLRoyale - Comprobar Nuevos Player"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/generar_ranking"
+        android:showAsAction="never"
+        android:title="CLRoyale - Generar Rankings"
+        tools:ignore="AppCompatResource" />
+
+</menu>
